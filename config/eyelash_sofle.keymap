@@ -38,22 +38,6 @@
     behaviors {
     };
 
-    macros {
-        IME: IME {
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_tap>,
-                <&macro_param_2to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>;
-
-            label = "IME";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,11 +47,11 @@
 &kp TAB         &kp Q         &kp W     &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I          &kp O             &kp P              &kp BSLH
 &kp LEFT_SHIFT  &kp A         &kp S     &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K          &kp L             &kp SEMI           &kp APOS
 &kp LCTRL       &kp Z         &kp X     &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA      &kp DOT           &kp FSLH           &kp EQUAL
-&kp C_MUTE      &kp LEFT_WIN  &kp LWIN  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp ENTER  &mo 2   &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp C_MUTE      &out OUT_TOG  &kp LWIN  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp ENTER  &mo 2   &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "LAYER 0";
         };
 
         layer_1 {
@@ -79,7 +63,7 @@
 &kp C_MUTE       &trans           &trans           &trans           &trans                &trans             &mkp LCLK        &trans          &trans           &trans           &kp KP_NUMBER_0  &trans
             >;
 
-            display-name = "layer1";
+            display-name = "LAYER 1";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -93,16 +77,6 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
