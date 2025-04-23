@@ -66,7 +66,7 @@ layers:
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   layer1:
-  - {t: '`', s: '~'}
+  - '~'
   - F1
   - F2
   - F3
@@ -83,7 +83,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Alt+Ctl+$$mdi:backspace-reverse-outline$$
   - Sft+$$mdi:keyboard-esc$$
-  - Ctl+Sft+KP 1
+  - Ctl+Sft+1
   - F6
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - F7
@@ -96,7 +96,7 @@ layers:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
+  - Gui+$$mdi:keyboard-space$$
   - Gui+L
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
