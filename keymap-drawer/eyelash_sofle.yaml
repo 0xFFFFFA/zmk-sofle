@@ -55,7 +55,7 @@ layers:
   - {t: '=', s: +}
   - $$mdi:volume-off$$
   - LEFT WIN
-  - LEFT WIN
+  - LWIN
   - $$mdi:apple-keyboard-option$$
   - layer1
   - $$mdi:keyboard-space$$
