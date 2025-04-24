@@ -57,11 +57,11 @@ layers:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - LWIN
   - $$mdi:apple-keyboard-option$$
-  - LAYER 1
+  - {t: ',', h: LAYER 1, s: <}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '2'
+  - {t: ., h: '2'}
   - {t: '-', s: _}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
